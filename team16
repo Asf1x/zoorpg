@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+class Character {
+private:
+std::string name;
+int m_health;
+int m_attack;
+int m_defense;
+
+public:
+Character(std::string name, int health, int attack, int defense);
+std::string getName();
+int getHealth();
+int getAttack();
+int getDefense();
+void takeDamage(int damage);
+void attack(Character& target);
+};
+
+
+
+
+
+int main() {
+  
+}
