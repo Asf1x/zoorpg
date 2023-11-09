@@ -4,7 +4,7 @@
 
 class Character {
 private:
-std::string name;
+std::string m_name;
 int m_health;
 int m_attack;
 int m_defense;
@@ -18,7 +18,64 @@ int getDefense();
 void takeDamage(int damage);
 void attack(Character& target);
 };
+void Character::takeDamage(int damage) {
+  m_health -= damage;
+  if (m_health < 0) {
+    m_health = 0;
+  }
+}
+void Character::attack(Character& target) {
+  
+}
+Character::Character(std::string name, int health, int attack, int defense) {
+  m_name = name;
+  m_health = health;
+  m_attack = attack;
+  m_defense = defense;
+  
+}
+std::string Character::getName() {
+  return m_name;
+}
+int Character::getHealth() {
+  return m_health;
+};
+int Character::getAttack() {
+  return m_attack;
 
+};
+int Character::getDefense() {
+  return m_defense;
+};
+
+class Map {
+private:
+
+
+
+
+public:
+
+};
+
+class NPC {
+private:
+public:
+
+};
+
+class Game {
+public:
+    void start(){
+
+    };
+    void loadGame(){
+
+    };
+    void saveGame(){
+
+    };
+};
 
 
 
