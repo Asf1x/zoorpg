@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-class Character{
+class Character : private Object{
 std::string m_name;
 int m_health;
 int m_attack;
