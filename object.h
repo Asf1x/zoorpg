@@ -1,4 +1,5 @@
-class object{
+#include <iostream>
+class Object{
 private:
 int m_xCord;
 int m_yCord;
